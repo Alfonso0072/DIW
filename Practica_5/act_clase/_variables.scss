@@ -2,4 +2,37 @@ $fuente_principal: Arial;
 $color_primario: lightblue;
 $color_secundario: black;
 
-     
+body{
+    font-family: $fuente_principal;
+}
+
+h1{
+    color: $color_primario;
+}
+
+h3{
+    color: $color_secundario;
+}
+
+button{
+    cursor: pointer;
+    font-size: large;
+    
+    a{
+        @extend button;
+        text-decoration: none;
+    }
+}
+
+@mixin img{
+    width: 10rem;
+    height: 5rem;
+}
+
+@for $i from 1 through 4{
+    .lista-#{$i}:hover{
+        width: 1px * $i;
+        color: red;
+        @include img();
+    }
+}
