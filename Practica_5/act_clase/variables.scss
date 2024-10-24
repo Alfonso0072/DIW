@@ -30,7 +30,7 @@ button{
 }
 
 @for $i from 1 through 4{
-    .lista-#{$i}:hover{
+    .item-#{$i}:hover{
         width: 1px * $i;
         color: red;
         @include img();

@@ -18,28 +18,28 @@ button a {
   text-decoration: none;
 }
 
-.lista-1:hover {
+.item-1:hover {
   width: 1px;
   color: red;
   width: 10rem;
   height: 5rem;
 }
 
-.lista-2:hover {
+.item-2:hover {
   width: 2px;
   color: red;
   width: 10rem;
   height: 5rem;
 }
 
-.lista-3:hover {
+.item-3:hover {
   width: 3px;
   color: red;
   width: 10rem;
   height: 5rem;
 }
 
-.lista-4:hover {
+.item-4:hover {
   width: 4px;
   color: red;
   width: 10rem;
