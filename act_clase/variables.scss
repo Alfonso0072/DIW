@@ -1,0 +1,83 @@
+$fuente_principal: Arial;
+$color_primario: lightblue;
+$color_secundario: black;
+$color_primario_hover: #86c5da; 
+$color_secundario_hover: #333; 
+
+body {
+    font-family: $fuente_principal;
+}
+
+h1 {
+    color: $color_primario;
+}
+
+h3 {
+    color: $color_secundario;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem; 
+    text-decoration: none;
+
+    a {
+        text-decoration: none;
+        color: inherit; 
+    }
+}
+
+@mixin img {
+    width: 10rem; 
+    height: 5rem; 
+}
+
+@mixin estiloContenedor {
+    border: 0.1rem solid; 
+    padding: 1rem; 
+    margin-bottom: 2rem; 
+    text-align: center;
+}
+
+.item {
+    @include estiloContenedor;
+
+    &:hover {
+        border-color: red;
+    }
+}
+
+
+@for $i from 1 through 4 {
+    .item-#{$i} {
+        &:hover {
+            border: 0.1rem solid red;
+        }
+    }
+}
+
+.botonBase {
+    padding: 0.6rem 1.25rem;
+    border: none;
+    border-radius: 0.3rem; 
+    font-size: 1rem; 
+    cursor: pointer;
+}
+
+.botonPrimario {
+    background-color: $color_primario;
+    color: white;
+
+    &:hover {
+        background-color: $color_primario_hover; 
+    }
+}
+
+.botonSecundario {
+    background-color: black;
+    color: white;
+
+    &:hover {
+        background-color: $color_secundario_hover;
+    }
+}

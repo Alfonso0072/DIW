@@ -1,0 +1,71 @@
+body {
+  font-family: Arial;
+}
+
+h1 {
+  color: lightblue;
+}
+
+h3 {
+  color: black;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.item {
+  border: 0.1rem solid;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.item:hover {
+  border-color: red;
+}
+
+.item-1:hover {
+  border: 0.1rem solid red;
+}
+
+.item-2:hover {
+  border: 0.1rem solid red;
+}
+
+.item-3:hover {
+  border: 0.1rem solid red;
+}
+
+.item-4:hover {
+  border: 0.1rem solid red;
+}
+
+.botonBase {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.botonPrimario {
+  background-color: lightblue;
+  color: white;
+}
+.botonPrimario:hover {
+  background-color: #86c5da;
+}
+
+.botonSecundario {
+  background-color: black;
+  color: white;
+}
+.botonSecundario:hover {
+  background-color: #333;
+}/*# sourceMappingURL=variables.css.map */
