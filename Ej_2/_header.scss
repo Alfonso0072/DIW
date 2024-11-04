@@ -1,0 +1,44 @@
+@import 'header';
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    aside {
+        &.facebook {
+            @include estilo-contenedor('facebook');
+        }
+        &.twitter {
+            @include estilo-contenedor('twitter');
+        }
+        &.instagram {
+            @include estilo-contenedor('instagram');
+        }
+        &.linkedin {
+            @include estilo-contenedor('linkedin');
+        }
+        &.youtube {
+            @include estilo-contenedor('youtube');
+        }
+        &.tiktok {
+            @include estilo-contenedor('pinterest');
+        }
+
+
+        .social-logo {
+            @include estilo-imagen(false); 
+            margin-bottom: 10px; 
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+    }
+}

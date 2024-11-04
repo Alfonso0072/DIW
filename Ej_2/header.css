@@ -1,0 +1,142 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: pink;
+  text-decoration: none;
+}
+header img {
+  display: flex;
+}
+header h1,
+header h2 {
+  margin: 0;
+}
+
+nav {
+  background-color: pink;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0.2em;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.redes-sociales .contenedor-social {
+  padding: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+.redes-sociales .contenedor-social.facebook {
+  background-color: rgb(67, 235, 140);
+}
+.redes-sociales .contenedor-social.twitter {
+  background-color: gray;
+}
+.redes-sociales .contenedor-social.instagram {
+  background-color: violet;
+}
+.redes-sociales .contenedor-social.linkedin {
+  background-color: rgb(88, 203, 242);
+}
+.redes-sociales .contenedor-social.youtube {
+  background-color: red;
+}
+.redes-sociales .contenedor-social.pinterest {
+  background-color: #69c9d0;
+}
+.redes-sociales .contenedor-social .logo-social {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.62rem;
+}
+.redes-sociales .contenedor-social h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.redes-sociales .contenedor-social p {
+  font-size: 0.9rem;
+  margin-top: 0.31rem;
+}
+
+.padding0 {
+  padding: 0;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 60px;
+}
+
+.rojo {
+  color: red;
+  font-weight: bolder;
+}
+
+.verde {
+  color: rgb(67, 235, 140);
+  font-weight: bolder;
+}
+
+.azul {
+  color: rgb(88, 203, 242);
+  font-weight: bolder;
+}
+
+.morado {
+  color: violet;
+  font-weight: bolder;
+}
+
+.gris {
+  color: gray;
+  font-weight: bolder;
+}
+
+.sans {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500rem;
+}
+
+.abril {
+  font-family: "Abril Fatface", cursive;
+  font-weight: bolder;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=header.css.map */

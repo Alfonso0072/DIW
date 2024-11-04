@@ -1,0 +1,199 @@
+$fuente_principal: Arial;
+$color-facebook: rgb(67, 235, 140);
+$color-twitter: gray;
+$color-instagram: violet;
+$color-linkedin: rgb(88, 203, 242);
+$color-youtube: red;
+$color-pinterest: #69c9d0;
+
+body {
+    font-family: $fuente_principal;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: pink;
+    text-decoration: none;
+
+    img {
+        display: flex;
+    }
+
+    h1,
+    h2 {
+        margin: 0;
+    }
+
+}
+
+nav {
+    background-color: pink;
+
+    ul {
+        list-style: none;
+        margin: 0;
+
+        li {
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0.2em;
+        }
+    }
+}
+
+@mixin estilo-contenedor($red) {
+    @if $red =='facebook' {
+        background-color: $color-facebook;
+    }
+
+    @else if $red =='twitter' {
+        background-color: $color-twitter;
+    }
+
+    @else if $red =='instagram' {
+        background-color: $color-instagram;
+    }
+
+    @else if $red =='linkedin' {
+        background-color: $color-linkedin;
+    }
+
+    @else if $red =='youtube' {
+        background-color: $color-youtube;
+    }
+
+    @else if $red =='pinterest' {
+        background-color: $color-pinterest;
+    }
+}
+
+@mixin estilo-imagen($esLogo) {
+    width: 3rem;
+    height: 3rem;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .contenedor-social {
+        padding: 1.2rem;
+        width: 100%;
+        text-align: center;
+
+        &.facebook {
+            @include estilo-contenedor('facebook');
+        }
+
+        &.twitter {
+            @include estilo-contenedor('twitter');
+        }
+
+        &.instagram {
+            @include estilo-contenedor('instagram');
+        }
+
+        &.linkedin {
+            @include estilo-contenedor('linkedin');
+        }
+
+        &.youtube {
+            @include estilo-contenedor('youtube');
+        }
+
+        &.pinterest {
+            @include estilo-contenedor('pinterest');
+        }
+
+        .logo-social {
+            @include estilo-imagen(false);
+            margin-bottom: 0.62rem; 
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-top: 0.31rem;
+        }
+    }
+}
+
+.padding0{
+    padding: 0;
+}
+
+footer {
+    position: relative; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 60px;
+}
+
+.rojo{
+    color: $color-youtube;
+    font-weight: bolder;
+}
+
+.verde{
+    color: $color-facebook;
+    font-weight: bolder;
+}
+
+.azul{
+    color: $color-linkedin;
+    font-weight: bolder;
+}
+
+.morado{
+    color: $color-instagram;
+    font-weight: bolder;
+}
+
+.gris{
+    color: $color-twitter;
+    font-weight: bolder;
+}
+
+$sans: 'Open Sans', sans-serif;
+$abril: 'Abril Fatface', cursive;
+
+.sans {
+    font-family:  $sans;
+    font-weight: 500rem;
+}
+
+.abril{
+    font-family: $abril;
+    font-weight: bolder;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
